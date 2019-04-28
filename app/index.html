@@ -11,11 +11,11 @@
         <div class="navbar">
             <div class="navbar-inner">
                 <ul class="nav">
-
+                    <li><a href="newevent.html">Create Event</a></li>
                 </ul>
             </div>
         </div>
-        <div ng-controller="EventController" style="padding-left:20px; padding-right:20px;">
+        <div ng-controller="eventCtrl" style="padding-left:20px; padding-right:20px;">
             <img ng-src="{{event.imageUrl}}" alt="{{event.name}}" />
             <div class="row">
                 <div class="spann11">
@@ -82,7 +82,7 @@
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular/angular-sanitize.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/controllers/EventController.js"></script>
+    <script src="js/controllers/eventCtrl.js"></script>
     <script src="js/filters.js"></script>
 </body>
 </html>

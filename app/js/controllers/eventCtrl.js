@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.controller('EventController', function EventController($scope){
+eventsApp.controller('eventCtrl', function EventController($scope){
     $scope.sortorder = 'name';
     $scope.event = {
         name: 'Angular Boot Camp',
