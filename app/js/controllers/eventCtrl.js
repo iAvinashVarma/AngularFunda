@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.controller('eventCtrl', function EventController($scope, $log, $anchorScroll, eventData){
+eventsApp.controller('eventCtrl', function EventController($scope, $log, $anchorScroll, $locale, eventData){
     $scope.sortorder = 'name';
     eventData.getEvent()
     .$promise.then(
@@ -11,6 +11,7 @@ eventsApp.controller('eventCtrl', function EventController($scope, $log, $anchor
             $log.error(response);
         }
     );
+    $scope.fullDateFormat = $locale.DATETIME_FORMATS.fullDate;
     $scope.upVoteSession = function(session){
         session.upVoteCount++;
     }
