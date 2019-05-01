@@ -11,7 +11,6 @@ eventsApp.controller('eventCtrl', function EventController($scope, $log, $anchor
             $log.error(response);
         }
     );
-    $scope.fullDateFormat = $locale.DATETIME_FORMATS.fullDate;
     $scope.upVoteSession = function(session){
         session.upVoteCount++;
     }
